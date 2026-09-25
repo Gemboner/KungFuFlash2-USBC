@@ -1,0 +1,73 @@
+name: Build
+
+on:
+  push:
+    branches: ["main"]
+    tags:
+      - "v*"
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install toolchain
+        run: |
+          sudo apt update
+          sudo apt install -y gcc-arm-none-eabi cc65
+
+      - name: Set version
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+            VERSION="${{ github.ref_name }}"
+            VERSION="${VERSION#v}"
+          else
+            VERSION="dev"
+          fi
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Build firmware
+        run: make -C firmware version="$VERSION"
+
+      - name: Verify build success
+        run: |
+          if ! ls firmware/build/KungFuFlash2_v${VERSION}.bin 1>/dev/null 2>&1; then
+            echo "Build failed: No .bin file found in the firmware/build/ folder!"
+            exit 1
+          fi
+          echo "Build successful!"
+
+      - name: Upload firmware artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware-build
+          path: |
+            firmware/build/*.bin
+            firmware/build/*.upd
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download firmware
+        uses: actions/download-artifact@v4
+        with:
+          name: firmware-build
+          path: artifacts
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/*.bin
+            artifacts/*.upd

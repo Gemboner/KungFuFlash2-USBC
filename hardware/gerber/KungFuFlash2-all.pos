@@ -1,0 +1,56 @@
+### Footprint positions - created on 2026-08-15T12:38:28 ###
+### Printed by KiCad version 10.0.1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                      Package                                             PosX       PosY       Rot  Side
+C1        10u                      C_0805_2012Metric_Pad1.18x1.45mm_HandSolder      79.1210  -105.3465   90.0000  top
+C2        10u                      C_0805_2012Metric_Pad1.18x1.45mm_HandSolder      89.9705   -99.4410  180.0000  top
+C3        100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      91.9480  -105.7770  -90.0000  top
+C4        100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      96.2395   -95.6310  180.0000  top
+C5        100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      96.1655  -109.3470  180.0000  top
+C6        100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     122.0205  -101.6000    0.0000  top
+C7        20p                      C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      96.3287   -97.9040    0.0000  top
+C8        20p                      C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      96.2037  -106.5040    0.0000  top
+C9        100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     118.9495   -80.1370  180.0000  top
+C10       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     101.0655  -114.8080  180.0000  top
+C11       2.2u                     C_0805_2012Metric_Pad1.18x1.45mm_HandSolder     121.5175  -108.2040  180.0000  top
+C12       2.2u                     C_0805_2012Metric_Pad1.18x1.45mm_HandSolder     121.5605   -94.2340    0.0000  top
+C13       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     121.3855   -91.1860    0.0000  top
+C14       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     102.4625   -91.9480    0.0000  top
+C15       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      94.5020   -84.0105  180.0000  top
+C16       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     113.5875   -80.1370    0.0000  top
+C17       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      88.5050   -84.0105  180.0000  top
+C18       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      85.6560  -109.9010    0.0000  top
+C19       100n                     C_0603_1608Metric_Pad1.08x0.95mm_HandSolder     121.5125  -111.1250    0.0000  top
+D1        LED                      LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder   127.0545   -77.8510    0.0000  top
+D2        D_Schottky               D_SMA_Handsoldering                              79.6925  -113.0346  -90.0000  top
+D3        D_Schottky               D_SMA_Handsoldering                             126.1110   -85.0900  -90.0000  top
+J1        SWD                      PinHeader_1x05_P2.54mm_Vertical                 129.2860   -95.3516    0.0000  top
+J2        USB_C_Receptacle_USB2.0  USB_C_Receptacle_XKB_U262-16XN-4BVC11           132.7460   -86.5180   90.0000  top
+J3        Wifi                     PinSocket_2x04_P2.54mm_Vertical                 121.4120   -86.9950  -90.0000  top
+Q1        BC817                    SOT-23                                           83.3120  -115.7130  -90.0000  top
+R1        510R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     123.2445   -80.2005    0.0000  top
+R2        10k                      R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     125.2060   -99.0600  180.0000  top
+R3        10k                      R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      90.1935  -109.9010  180.0000  top
+R4        510R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      87.9935  -114.9010    0.0000  top
+R5        510R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     109.2200   -76.5265  -90.0000  top
+R6        510R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      89.5985   -76.5265  -90.0000  top
+R7        510R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      92.7935  -114.9010  180.0000  top
+R8        100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     128.9050  -115.4270   90.0000  top
+R9        100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     126.8480  -115.4270   90.0000  top
+R10       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     124.8160  -115.4270   90.0000  top
+R11       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     122.7840  -115.4270   90.0000  top
+R12       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     120.7520  -115.4270   90.0000  top
+R13       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     118.7200  -115.4270   90.0000  top
+R14       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     116.6880  -115.4270   90.0000  top
+R15       100R                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     114.6560  -115.4270   90.0000  top
+R16       5.1k                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     131.6990   -80.0100  180.0000  top
+R17       5.1k                     R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     131.8260   -92.8370  180.0000  top
+SW1       Reset                    SW_PUSH_6mm_H8mm                                123.6750   -70.3580    0.0000  top
+SW2       Menu                     SW_PUSH_6mm_H8mm                                112.3315   -70.3665    0.0000  top
+SW3       Special                  SW_PUSH_6mm_H8mm                                 79.6060   -70.3665    0.0000  top
+U2        AMS1117-3.3              SOT-223-3_TabPin2                                85.5595  -104.0765    0.0000  top
+U3        STM32H7B0VBTx            LQFP-100_14x14mm_P0.5mm                         108.6170  -102.4170    0.0000  top
+XS1       uSD_push_push            Conn_uSDcard                                     99.1840   -70.1485  180.0000  top
+Y1        25_MHz                   Crystal_SMD_3225-4Pin_3.2x2.5mm                  96.0120  -102.3620   90.0000  top
+## End
